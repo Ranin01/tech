@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+header {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 5%;
+    background:transparent;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    clip-path: circle(50%);
+}
+
+li,
+a,
+button {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color:#F6A00A ;
+}
+
+nav ul li {
+
+    display: inline-block;
+    padding: 0px 40px;
+    width:10;
+    line-height:60px;
+    align-items: center;
+}
+
+nav ul li a {
+    transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+    color: #000;
+    transition:all 0.3s ease 0s; 
+    
+}
+
+header > button {
+    padding: 9px 25px;
+    background-color:#b23c23 ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header > button:hover {
+    background-color: #E28571;
+}
+
+.wrapper {
+    background: url('..\background.jpg') no-repeat center center / cover;
+    width: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1; 
+}
+
+.wrapper:before {
+    position: absolute;
+    content: '';
+    background-image: linear-gradient(to right,peachpuff,#F9F5EE); 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.content {
+    display:  flex-end;
+    padding: 150px 6%;
+    justify-content: flex-end;
+    color:#b23c23;
+}
+
+.hero-info h1 {
+    font-size: 40px;
+}
+
+.hero-info p {
+    margin: 600px 0;
+    font-weight: 400;
+    line-height: 40;
+
+}
+
+
+.social-links {
+    padding: 15px;
+    margin-top: 100px;
+}
+
+.social-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-social {
+    padding: 9px 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.bg-facebook {
+    background-color: #4267B2;
+}
+
+.bg-youtube {
+    background-color: #FF0000;
+}
+
+.bg-instagram {
+    background-color: #C13584;
+}
+.arrow{
+    cursor: pointer;
+    align-items: center;
+    height:6hv;
+    width:30px;
+    display: none;
+    
+
+}
+.line1,.line2,.line3{
+    height:3px;
+    width: 20px;
+    margin-top: 2px;
+    background-color:#b23c23;
+    border-radius: 3px;
+ 
+}
+section{
+    line-height: 2;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+section:nth-child(odd){
+    background: #E28571;
+
+}
+.about{
+    display:  flex-end;
+    padding: 150px 6%;
+    justify-content: flex-end;
+    color:#b23c23;
+
+}
+
+@media screen and (max-width:1026px){
+    .nav-links{
+        width:60%;
+    }        
+}
+@media screen and (max-width:1000px){
+    .nav-links{
+       display: none;
+       position:fixed;
+       top:28vh;
+       left: 0;
+       background-color:peachpuff;
+       height:100vh;
+       width: 100%;
+       transform: translateX(100%);
+       transition: transform 0.6s;
+
+    }   
+    .arrow{
+        display:block;
+    }  
+    .nav-links{
+        flex-direction: column;
+        padding:10px;
+    }  
+    .nav-links{
+        text-align:left;
+    }
+}
+.display{
+    transform:translate(0%);
+}
+
