@@ -1,1 +1,1 @@
-# tech
+creating a landing page
